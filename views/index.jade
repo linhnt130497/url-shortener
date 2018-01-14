@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  h2 Example creation usage
+  code.red http://#{host}/new/https://www.google.com
+  br
+  code.red http://#{host}/new/https://www.gmail.com
+  h2 Example creation output
+  code.red { "original_url":"https://www.gmail.com", "short_url":"http://#{host}/123" }
+  h2 Usage:
+  code.red http://#{host}/123
+  h2 Will redirect to 
+  code.red https://www.google.com/
+  
